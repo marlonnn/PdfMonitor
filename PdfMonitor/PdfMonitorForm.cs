@@ -57,7 +57,7 @@ namespace PdfMonitor
         }
         private void PdfMonitorForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            LogHelper.GetLogger<PdfMonitorForm>().Debug("Stop Monitor!");
+
         }
 
         private void btnInputSelect_Click(object sender, EventArgs e)
@@ -130,6 +130,10 @@ namespace PdfMonitor
         {
             if (MessageBox.Show("是否确认退出程序？", "退出", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
+                var filePath = string.Format("{0}\\Config\\MonitorFolder.xml", System.Environment.CurrentDirectory);
+                XMLHelper.Instance.WriteXML<MonitorFolder>(Program.SysConfig.MonitorFolder, filePath);
+                LogHelper.GetLogger<PdfMonitorForm>().Debug("Stop Monitor!");
+
                 // 关闭所有的线程
                 this.Dispose();
                 this.Close();
