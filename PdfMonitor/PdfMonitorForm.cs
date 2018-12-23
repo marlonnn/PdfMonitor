@@ -57,7 +57,6 @@ namespace PdfMonitor
         }
         private void PdfMonitorForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            SysConfig.Save(Program.SysConfig, Program.SysConfigOrigin);
             LogHelper.GetLogger<PdfMonitorForm>().Debug("Stop Monitor!");
         }
 

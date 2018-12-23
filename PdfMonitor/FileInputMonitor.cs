@@ -28,26 +28,26 @@ namespace PdfMonitor
 
         public string OutputFolder
         {
-            get { return Program.SysConfig.OutputFolder; }
+            get { return Program.SysConfig.MonitorFolder.OutputFolder; }
             set
             {
-                if (value != Program.SysConfig.OutputFolder)
+                if (value != Program.SysConfig.MonitorFolder.OutputFolder)
                 {
-                    Program.SysConfig.OutputFolder = value;
+                    Program.SysConfig.MonitorFolder.OutputFolder = value;
                 }
             }
         }
 
         public string FolderToWatchFor
         {
-            get { return Program.SysConfig.FolderToWatchFor; }
+            get { return Program.SysConfig.MonitorFolder.FolderToWatchFor; }
             set
             {
-                if (value != Program.SysConfig.FolderToWatchFor)
+                if (value != Program.SysConfig.MonitorFolder.FolderToWatchFor)
                 {
-                    Program.SysConfig.FolderToWatchFor = value;
+                    Program.SysConfig.MonitorFolder.FolderToWatchFor = value;
                     fileSystemWatcher.Created -= FileCreated;
-                    fileSystemWatcher = new FileSystemWatcher(Program.SysConfig.FolderToWatchFor);
+                    fileSystemWatcher = new FileSystemWatcher(Program.SysConfig.MonitorFolder.FolderToWatchFor);
                     fileSystemWatcher.EnableRaisingEvents = true;
                     fileSystemWatcher.Created += FileCreated;
                 }
@@ -61,7 +61,7 @@ namespace PdfMonitor
 
             renameThread = new Thread(new ThreadStart(Rename));
             historyThread = new Thread(new ThreadStart(HistoryRename));
-            fileSystemWatcher = new FileSystemWatcher(Program.SysConfig.FolderToWatchFor);
+            fileSystemWatcher = new FileSystemWatcher(Program.SysConfig.MonitorFolder.FolderToWatchFor);
             fileSystemWatcher.EnableRaisingEvents = true;
 
             fileSystemWatcher.Created += FileCreated;
@@ -111,7 +111,7 @@ namespace PdfMonitor
                         {
                             try
                             {
-                                var destFileName = string.Format("{0}\\{1}", Program.SysConfig.OutputFolder, br.ReportName);
+                                var destFileName = string.Format("{0}\\{1}", Program.SysConfig.MonitorFolder.OutputFolder, br.ReportName);
                                 if (!File.Exists(destFileName))
                                 {
                                     System.IO.File.Copy(br.OriginalFile, destFileName);
@@ -183,7 +183,7 @@ namespace PdfMonitor
                                     var eTime = string.Format("{0} {1}", match2.Groups[7].ToString(), match2.Groups[9].ToString());
                                     var endTime = Convert.ToDateTime(eTime);
                                     var br = new BoilerReport(originalFile, sn, deviceName, id, startTime, endTime);
-                                    var destFileName = string.Format("{0}\\{1}", Program.SysConfig.OutputFolder, br.ReportName);
+                                    var destFileName = string.Format("{0}\\{1}", Program.SysConfig.MonitorFolder.OutputFolder, br.ReportName);
                                     if (!File.Exists(destFileName))
                                     {
                                         System.IO.File.Copy(br.OriginalFile, destFileName);

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,16 +19,6 @@ namespace PdfMonitor
             get { return _sysConfig; }
         }
 
-        private static SysConfig _sysConfigOrigin;
-
-        /// <summary>
-        /// The original configuration about software and hardware
-        /// </summary>
-        public static SysConfig SysConfigOrigin
-        {
-            get { return _sysConfigOrigin; }
-        }
-
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -38,11 +29,56 @@ namespace PdfMonitor
             Application.SetCompatibleTextRenderingDefault(false);
             try
             {
-                //_sysConfig = new PdfMonitor.SysConfig();
-                _sysConfig = SysConfig.Load();
-                _sysConfigOrigin = SysConfig.Load();
+                _sysConfig = new PdfMonitor.SysConfig();
 
-                Application.Run(new PdfMonitorForm());
+                //var folderToWatchFor = string.Format("{0}\\input", System.Environment.CurrentDirectory);
+                //var outputFolder = string.Format("{0}\\output", System.Environment.CurrentDirectory);
+                var filePath = string.Format("{0}\\Config\\MonitorFolder.xml", System.Environment.CurrentDirectory);
+                //XMLHelper.Instance.WriteXML<MonitorFolder>(new MonitorFolder(folderToWatchFor, outputFolder), filePath);
+                if (File.Exists(filePath))
+                {
+                    var monitorFolder = XMLHelper.Instance.ReadXML<MonitorFolder>(filePath);
+                    if (monitorFolder != null)
+                    {
+                        if (monitorFolder.FolderToWatchFor != null && monitorFolder.OutputFolder != null)
+                        {
+                            if (Directory.Exists(monitorFolder.FolderToWatchFor) && Directory.Exists(monitorFolder.OutputFolder))
+                            {
+                                _sysConfig.MonitorFolder = monitorFolder;
+                                Application.Run(new PdfMonitorForm());
+                            }
+                            else
+                            {
+                                if (MessageBox.Show("请检查输入/输出文件夹是否存在，程序将退出！", "异常", MessageBoxButtons.OK, MessageBoxIcon.Question) == DialogResult.OK)
+                                {
+                                    Application.Exit();
+                                }
+                            }
+                        }
+                        else
+                        {
+                            if (MessageBox.Show("请检查系统配置文件是否存在，程序将退出！", "异常", MessageBoxButtons.OK, MessageBoxIcon.Question) == DialogResult.OK)
+                            {
+                                Application.Exit();
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if (MessageBox.Show("请检查系统配置文件是否存在，程序将退出！", "异常", MessageBoxButtons.OK, MessageBoxIcon.Question) == DialogResult.OK)
+                        {
+                            Application.Exit();
+                        }
+                    }
+                }
+                else
+                {
+                    if (MessageBox.Show("请检查系统配置文件是否存在，程序将退出！", "异常", MessageBoxButtons.OK, MessageBoxIcon.Question) == DialogResult.OK)
+                    {
+                        Application.Exit();
+                    }
+                }
+
             }
             catch (Exception ex)
             {
