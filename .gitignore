@@ -4,3 +4,8 @@
 
 /PdfMonitor/bin/Debug
 /PdfMonitor/obj/Debug
+/PdfMonitor/bin/Release
+/PdfMonitor/obj/Release
+/PdfMonitor Setup/PdfMonitor Setup/Express/SingleImage/DiskImages/DISK1
+/PdfMonitor Setup/PdfMonitor Setup/Express/SingleImage/Reports
+/PdfMonitor Setup/PdfMonitor Setup/Express/SingleImage/LogFiles

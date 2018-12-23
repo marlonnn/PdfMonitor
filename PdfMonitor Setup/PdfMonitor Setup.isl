@@ -346,11 +346,11 @@
 		<row><td>ISX_DEFAULTCOMPONENT3</td><td>{B0603A80-3A1E-4DBC-B37D-51EEB50142A1}</td><td>LOG</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT4</td><td>{25755F44-BCD4-42F7-87B1-469B58EBD3A1}</td><td>OUTPUT</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>IS_ININSTALL_SHORTCUT</td><td>{6E300A11-8DCB-4592-9FE0-A2CDB2296BB9}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>PdfMonitor.exe</td><td>{2548BA65-8121-4659-8DC9-9B20D015A744}</td><td>INSTALLDIR</td><td>2</td><td/><td>pdfmonitor.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>PdfMonitor.vshost.exe</td><td>{EFBD4A14-B7BA-4199-833F-7C8BDA1E278D}</td><td>INSTALLDIR</td><td>2</td><td/><td>pdfmonitor.vshost.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>commons_logging.dll</td><td>{A366FEF1-8F1F-4A5D-85F7-8E0653BF7925}</td><td>INSTALLDIR</td><td>2</td><td/><td>commons_logging.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>itextsharp.dll</td><td>{8F54A92E-C83C-422E-A9B6-C5842D29D158}</td><td>INSTALLDIR</td><td>2</td><td/><td>itextsharp.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>log4net.dll</td><td>{2C329177-EBAD-4C91-967F-1716DB7CE6BA}</td><td>INSTALLDIR</td><td>2</td><td/><td>log4net.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>PdfMonitor.exe</td><td>{1FD3D247-9454-42F3-B5D1-E01F20346EF6}</td><td>INSTALLDIR</td><td>2</td><td/><td>pdfmonitor.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>PdfMonitor.vshost.exe</td><td>{1D0C8762-6145-465D-B5DF-C971398AC24D}</td><td>INSTALLDIR</td><td>2</td><td/><td>pdfmonitor.vshost.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>commons_logging.dll</td><td>{8EA7E6E1-34F8-4AE2-842D-3506F8133399}</td><td>INSTALLDIR</td><td>2</td><td/><td>commons_logging.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>itextsharp.dll</td><td>{12A4DA03-2C58-4105-9DC8-8852304E4C22}</td><td>INSTALLDIR</td><td>2</td><td/><td>itextsharp.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>log4net.dll</td><td>{DFD6B030-CC6C-4027-B8D3-0A5D4D2BF8D5}</td><td>INSTALLDIR</td><td>2</td><td/><td>log4net.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1918,16 +1918,17 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
-		<row><td>commons_logging.dll</td><td>commons_logging.dll</td><td>COMMON~1.DLL|commons-logging.dll</td><td>0</td><td/><td/><td/><td>1</td><td>F:\zhongwen\YS\PdfMonitor\PdfMonitor\bin\Debug\commons-logging.dll</td><td>1</td><td/></row>
-		<row><td>itextsharp.dll</td><td>itextsharp.dll</td><td>ITEXTS~1.DLL|itextsharp.dll</td><td>0</td><td/><td/><td/><td>1</td><td>F:\zhongwen\YS\PdfMonitor\PdfMonitor\bin\Debug\itextsharp.dll</td><td>1</td><td/></row>
-		<row><td>log4net.dll</td><td>log4net.dll</td><td>log4net.dll</td><td>0</td><td/><td/><td/><td>1</td><td>F:\zhongwen\YS\PdfMonitor\PdfMonitor\bin\Debug\log4net.dll</td><td>1</td><td/></row>
-		<row><td>log4net.xml</td><td>ISX_DEFAULTCOMPONENT1</td><td>log4net.xml</td><td>0</td><td/><td/><td/><td>1</td><td>F:\zhongwen\YS\PdfMonitor\PdfMonitor\bin\Debug\Config\log4net.xml</td><td>1</td><td/></row>
-		<row><td>pdfmonitor.exe</td><td>PdfMonitor.exe</td><td>PDFMON~1.EXE|PdfMonitor.exe</td><td>0</td><td/><td/><td/><td>1</td><td>F:\zhongwen\YS\PdfMonitor\PdfMonitor\bin\Debug\PdfMonitor.exe</td><td>1</td><td/></row>
-		<row><td>pdfmonitor.exe.config</td><td>ISX_DEFAULTCOMPONENT</td><td>PDFMON~1.CON|PdfMonitor.exe.config</td><td>0</td><td/><td/><td/><td>1</td><td>F:\zhongwen\YS\PdfMonitor\PdfMonitor\bin\Debug\PdfMonitor.exe.config</td><td>1</td><td/></row>
-		<row><td>pdfmonitor.pdb</td><td>ISX_DEFAULTCOMPONENT</td><td>PDFMON~1.PDB|PdfMonitor.pdb</td><td>0</td><td/><td/><td/><td>1</td><td>F:\zhongwen\YS\PdfMonitor\PdfMonitor\bin\Debug\PdfMonitor.pdb</td><td>1</td><td/></row>
-		<row><td>pdfmonitor.vshost.exe</td><td>PdfMonitor.vshost.exe</td><td>PDFMON~1.EXE|PdfMonitor.vshost.exe</td><td>0</td><td/><td/><td/><td>1</td><td>F:\zhongwen\YS\PdfMonitor\PdfMonitor\bin\Debug\PdfMonitor.vshost.exe</td><td>1</td><td/></row>
-		<row><td>pdfmonitor.vshost.exe.config</td><td>ISX_DEFAULTCOMPONENT</td><td>PDFMON~1.CON|PdfMonitor.vshost.exe.config</td><td>0</td><td/><td/><td/><td>1</td><td>F:\zhongwen\YS\PdfMonitor\PdfMonitor\bin\Debug\PdfMonitor.vshost.exe.config</td><td>1</td><td/></row>
-		<row><td>pdfmonitor.vshost.exe.manife</td><td>ISX_DEFAULTCOMPONENT</td><td>PDFMON~1.MAN|PdfMonitor.vshost.exe.manifest</td><td>0</td><td/><td/><td/><td>1</td><td>F:\zhongwen\YS\PdfMonitor\PdfMonitor\bin\Debug\PdfMonitor.vshost.exe.manifest</td><td>1</td><td/></row>
+		<row><td>commons_logging.dll</td><td>commons_logging.dll</td><td>COMMON~1.DLL|commons-logging.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\wen zhong\Documents\GitHub\YS\PdfMonitor\PdfMonitor\bin\Debug\commons-logging.dll</td><td>1</td><td/></row>
+		<row><td>itextsharp.dll</td><td>itextsharp.dll</td><td>ITEXTS~1.DLL|itextsharp.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\wen zhong\Documents\GitHub\YS\PdfMonitor\PdfMonitor\bin\Debug\itextsharp.dll</td><td>1</td><td/></row>
+		<row><td>log4net.dll</td><td>log4net.dll</td><td>log4net.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\wen zhong\Documents\GitHub\YS\PdfMonitor\PdfMonitor\bin\Debug\log4net.dll</td><td>1</td><td/></row>
+		<row><td>log4net.xml</td><td>ISX_DEFAULTCOMPONENT1</td><td>log4net.xml</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\wen zhong\Documents\GitHub\YS\PdfMonitor\PdfMonitor\bin\Debug\Config\log4net.xml</td><td>1</td><td/></row>
+		<row><td>monitorfolder_back.xml</td><td>ISX_DEFAULTCOMPONENT1</td><td>MONITO~1.XML|MonitorFolder_Back.xml</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\wen zhong\Documents\GitHub\YS\PdfMonitor\PdfMonitor\bin\Debug\Config\MonitorFolder_Back.xml</td><td>1</td><td/></row>
+		<row><td>pdfmonitor.exe</td><td>PdfMonitor.exe</td><td>PDFMON~1.EXE|PdfMonitor.exe</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\wen zhong\Documents\GitHub\YS\PdfMonitor\PdfMonitor\bin\Debug\PdfMonitor.exe</td><td>1</td><td/></row>
+		<row><td>pdfmonitor.exe.config</td><td>ISX_DEFAULTCOMPONENT</td><td>PDFMON~1.CON|PdfMonitor.exe.config</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\wen zhong\Documents\GitHub\YS\PdfMonitor\PdfMonitor\bin\Debug\PdfMonitor.exe.config</td><td>1</td><td/></row>
+		<row><td>pdfmonitor.pdb</td><td>ISX_DEFAULTCOMPONENT</td><td>PDFMON~1.PDB|PdfMonitor.pdb</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\wen zhong\Documents\GitHub\YS\PdfMonitor\PdfMonitor\bin\Debug\PdfMonitor.pdb</td><td>1</td><td/></row>
+		<row><td>pdfmonitor.vshost.exe</td><td>PdfMonitor.vshost.exe</td><td>PDFMON~1.EXE|PdfMonitor.vshost.exe</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\wen zhong\Documents\GitHub\YS\PdfMonitor\PdfMonitor\bin\Debug\PdfMonitor.vshost.exe</td><td>1</td><td/></row>
+		<row><td>pdfmonitor.vshost.exe.config</td><td>ISX_DEFAULTCOMPONENT</td><td>PDFMON~1.CON|PdfMonitor.vshost.exe.config</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\wen zhong\Documents\GitHub\YS\PdfMonitor\PdfMonitor\bin\Debug\PdfMonitor.vshost.exe.config</td><td>1</td><td/></row>
+		<row><td>pdfmonitor.vshost.exe.manife</td><td>ISX_DEFAULTCOMPONENT</td><td>PDFMON~1.MAN|PdfMonitor.vshost.exe.manifest</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\wen zhong\Documents\GitHub\YS\PdfMonitor\PdfMonitor\bin\Debug\PdfMonitor.vshost.exe.manifest</td><td>1</td><td/></row>
 	</table>
 
 	<table name="FileSFPCatalog">
@@ -2077,11 +2078,11 @@
 		<row><td>ISX_DEFAULTCOMPONENT3</td><td/><td/><td>_BB21E4EA_130F_49D3_A103_AA3FD049F420_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT4</td><td/><td/><td>_A906C0B0_D48C_4B9C_A399_8C31E18E19F6_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>IS_ININSTALL_SHORTCUT</td><td/><td/><td>_05070625_6813_4DE2_8F76_DA39235B48A5_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>PdfMonitor.exe</td><td/><td/><td>_A95B4E6E_8309_4208_93C5_ADE8450FA7BA_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>PdfMonitor.vshost.exe</td><td/><td/><td>_5DBC4739_BBF5_4444_91F4_BDDD6791D72A_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>commons_logging.dll</td><td/><td/><td>_98941DF5_CD23_443B_8002_A465AE528400_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>itextsharp.dll</td><td/><td/><td>_7B359EB7_5CF2_4AC1_9D61_A525469B79AC_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>log4net.dll</td><td/><td/><td>_421CBF4D_B83D_4C0A_A11A_1C86685AA1D7_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>PdfMonitor.exe</td><td/><td/><td>_C0907306_F2ED_4A3B_A7C8_B7389A758648_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>PdfMonitor.vshost.exe</td><td/><td/><td>_54CCB081_B6D0_42F4_A74B_EA87331F1A8D_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>commons_logging.dll</td><td/><td/><td>_F0370909_B559_4A84_8CC8_05EA78164D3F_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>itextsharp.dll</td><td/><td/><td>_3D5F8673_A700_4C37_910C_83A7867E6584_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>log4net.dll</td><td/><td/><td>_B2317EF6_6F2F_4837_B21A_8102A0B38C2D_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -3484,6 +3485,10 @@
 		<row><td>IDS_SETUPEXE_EXPIRE_MSG</td><td>2052</td><td>本安装程序的使用期到 %s 结束。安装程序现在将退出。</td><td>0</td><td/><td>1848006960</td></row>
 		<row><td>IDS_SETUPEXE_LAUNCH_COND_E</td><td>2052</td><td>本安装程序内建有 InstallShield 的评估版，只能用 setup.exe 文件启动。</td><td>0</td><td/><td>1848006960</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME1</td><td>2052</td><td/><td>0</td><td/><td>1848006960</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME10</td><td>1033</td><td/><td>0</td><td/><td>-1104804625</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME10</td><td>2052</td><td>LAUNCH~1.EXE|Launch PdfMonitor.exe</td><td>0</td><td/><td>-1104804625</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME11</td><td>1033</td><td/><td>0</td><td/><td>-1104804625</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME11</td><td>2052</td><td>LAUNCH~1.EXE|Launch PdfMonitor.vshost.exe</td><td>0</td><td/><td>-1104804625</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME2</td><td>2052</td><td/><td>0</td><td/><td>1848006960</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME3</td><td>2052</td><td/><td>0</td><td/><td>1848006960</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME4</td><td>2052</td><td/><td>0</td><td/><td>1848006960</td></row>
@@ -3790,6 +3795,8 @@
 		<row><td>ID_STRING4</td><td>2052</td><td>LAUNCH~1.EXE|Launch PdfMonitor.exe</td><td>0</td><td/><td>1847986512</td></row>
 		<row><td>ID_STRING5</td><td>1033</td><td>LAUNCH~1.EXE|Launch PdfMonitor.exe</td><td>0</td><td/><td>1847995056</td></row>
 		<row><td>ID_STRING5</td><td>2052</td><td>LAUNCH~1.EXE|Launch PdfMonitor.exe</td><td>0</td><td/><td>1847995056</td></row>
+		<row><td>ID_STRING6</td><td>1033</td><td>LAUNCH~1.EXE|Launch PdfMonitor.exe</td><td>0</td><td/><td>-1104755409</td></row>
+		<row><td>ID_STRING6</td><td>2052</td><td>LAUNCH~1.EXE|Launch PdfMonitor.exe</td><td>0</td><td/><td>-1104755409</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>2052</td><td>系统将不安装此功能。</td><td>0</td><td/><td>1848006960</td></row>
 	</table>
 
@@ -3906,11 +3913,13 @@
 		<row><td>ARPPRODUCTICON.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\setupicon.ico</td><td>0</td></row>
 		<row><td>PdfMonitor.exe1_B11DE2D52A0E49DBBB7DE0D8BFA064BD.exe</td><td/><td>F:\zhongwen\YS\pdf文件重命名程序优化需求\Medatc.ico</td><td>0</td></row>
 		<row><td>PdfMonitor.exe1_C4129E76B4C94ADD99741C7C5804749B.exe</td><td/><td>F:\zhongwen\YS\pdf文件重命名程序优化需求\Medatc.ico</td><td>0</td></row>
+		<row><td>PdfMonitor.exe1_FBB7C79B600A459BB1480F8CEAF5DF24.exe</td><td/><td>F:\zhongwen\YS\pdf文件重命名程序优化需求\Medatc.ico</td><td>0</td></row>
 		<row><td>PdfMonitor.exe1_FFABAF2DB932420B9E54655A14265C31.exe</td><td/><td>F:\zhongwen\YS\pdf文件重命名程序优化需求\Medatc.ico</td><td>0</td></row>
 		<row><td>PdfMonitor.exe_046C95F5A1C0441BA3E1295AA7AF46E2.exe</td><td/><td>F:\zhongwen\YS\pdf文件重命名程序优化需求\Medatc.ico</td><td>0</td></row>
 		<row><td>PdfMonitor.exe_0C1D285E1F3047DC9280AAF4C3B04A10.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 		<row><td>PdfMonitor.exe_8C6C882E134D46D59418B998B3628901.exe</td><td/><td>F:\zhongwen\YS\pdf文件重命名程序优化需求\Medatc.ico</td><td>0</td></row>
 		<row><td>PdfMonitor.exe_C8D6307850A84203A6B1147AC381514F.exe</td><td/><td>F:\zhongwen\YS\pdf文件重命名程序优化需求\Medatc.ico</td><td>0</td></row>
+		<row><td>PdfMonitor.exe_E78A9A978F4149BDA30D928ABC7C2D1F.exe</td><td/><td>F:\zhongwen\YS\pdf文件重命名程序优化需求\Medatc.ico</td><td>0</td></row>
 		<row><td>PdfMonitor.vshost._8E8950A56F374E1C9C7F96559F71CB02.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 		<row><td>UNINST_Uninstall_P_A9620F3CC1EA4855849E005F300DA8C9.exe</td><td/><td>C:\Program Files (x86)\InstallShield\2015LE\Redist\Language Independent\OS Independent\uninstall.ico</td><td>0</td></row>
 	</table>
@@ -4584,8 +4593,8 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISComments</col>
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
-		<row><td>PdfMonitor.exe</td><td>pdfmon_1_pdfmonitor_setup</td><td>##IDS_SHORTCUT_DISPLAY_NAME8##</td><td>PdfMonitor.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>PdfMonitor.exe_046C95F5A1C0441BA3E1295AA7AF46E2.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>PdfMonitor.exe1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME8##</td><td>PdfMonitor.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>PdfMonitor.exe1_FFABAF2DB932420B9E54655A14265C31.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>PdfMonitor.exe</td><td>pdfmon_1_pdfmonitor_setup</td><td>##IDS_SHORTCUT_DISPLAY_NAME10##</td><td>PdfMonitor.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>PdfMonitor.exe_E78A9A978F4149BDA30D928ABC7C2D1F.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>PdfMonitor.exe1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME10##</td><td>PdfMonitor.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>PdfMonitor.exe1_FBB7C79B600A459BB1480F8CEAF5DF24.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
 		<row><td>UNINST_Uninstall_PdfMonitor_Setup</td><td>pdfmon_1_pdfmonitor_setup</td><td>UNINST|Uninstall PdfMonitor Setup</td><td>IS_ININSTALL_SHORTCUT</td><td>[SystemFolder]msiexec.exe</td><td>/x {6311743F-BD9C-4CB4-A90B-0A061E8D7FAE}</td><td/><td/><td>UNINST_Uninstall_P_A9620F3CC1EA4855849E005F300DA8C9.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
 	</table>
 
