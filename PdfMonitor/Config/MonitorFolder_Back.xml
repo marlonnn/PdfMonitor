@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<MonitorFolder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FolderToWatchFor>C:\Users\wen zhong\Desktop\New folder</FolderToWatchFor>
+  <OutputFolder>C:\Users\wen zhong\Documents\GitHub\YS\PdfMonitor\PdfMonitor\bin\Debug\output</OutputFolder>
+</MonitorFolder>

@@ -104,6 +104,9 @@
     <Content Include="Config\log4net.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Config\MonitorFolder_Back.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="itextsharp.dll" />
     <Content Include="log4net.dll" />
   </ItemGroup>

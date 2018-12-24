@@ -44,6 +44,7 @@ namespace PdfMonitor
                 //var folderToWatchFor = string.Format("{0}\\input", System.Environment.CurrentDirectory);
                 //var outputFolder = string.Format("{0}\\output", System.Environment.CurrentDirectory);
                 var filePath = string.Format("{0}\\Config\\MonitorFolder.xml", System.Environment.CurrentDirectory);
+                LogHelper.GetLogger<PdfMonitorForm>().Debug(filePath);
                 //XMLHelper.Instance.WriteXML<MonitorFolder>(new MonitorFolder(folderToWatchFor, outputFolder), filePath);
                 if (File.Exists(filePath))
                 {
@@ -55,21 +56,23 @@ namespace PdfMonitor
                             if (Directory.Exists(monitorFolder.FolderToWatchFor) && Directory.Exists(monitorFolder.OutputFolder))
                             {
                                 _sysConfig.MonitorFolder = monitorFolder;
-                                SetStartup();
+                                //SetStartup();
                                 Application.Run(new PdfMonitorForm());
                             }
                             else
                             {
                                 if (MessageBox.Show("请检查输入/输出文件夹是否存在，程序将退出！", "异常", MessageBoxButtons.OK, MessageBoxIcon.Question) == DialogResult.OK)
                                 {
+                                    LogHelper.GetLogger<PdfMonitorForm>().Debug("输入/输出文件夹不存在");
                                     Application.Exit();
                                 }
                             }
                         }
                         else
                         {
-                            if (MessageBox.Show("请检查系统配置文件是否存在，程序将退出！", "异常", MessageBoxButtons.OK, MessageBoxIcon.Question) == DialogResult.OK)
+                            if (MessageBox.Show("请检查系统配置文件是正确，程序将退出！", "异常", MessageBoxButtons.OK, MessageBoxIcon.Question) == DialogResult.OK)
                             {
+                                LogHelper.GetLogger<PdfMonitorForm>().Debug("系统配置文件不正确");
                                 Application.Exit();
                             }
                         }
@@ -78,6 +81,7 @@ namespace PdfMonitor
                     {
                         if (MessageBox.Show("请检查系统配置文件是否存在，程序将退出！", "异常", MessageBoxButtons.OK, MessageBoxIcon.Question) == DialogResult.OK)
                         {
+                            LogHelper.GetLogger<PdfMonitorForm>().Debug("系统配置文件不存在");
                             Application.Exit();
                         }
                     }
@@ -86,6 +90,7 @@ namespace PdfMonitor
                 {
                     if (MessageBox.Show("请检查系统配置文件是否存在，程序将退出！", "异常", MessageBoxButtons.OK, MessageBoxIcon.Question) == DialogResult.OK)
                     {
+                        LogHelper.GetLogger<PdfMonitorForm>().Debug("系统配置文件不存在");
                         Application.Exit();
                     }
                 }

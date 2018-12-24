@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,7 @@ namespace PdfMonitor
     {
         private FileInputMonitor fileInputMonitor;
         private HistoryReportQueue historyOrignalQueue;
+        private string configFilePath;
         public PdfMonitorForm()
         {
             InitializeComponent();
@@ -26,7 +28,21 @@ namespace PdfMonitor
             historyOrignalQueue = Program.SysConfig.HistoryOriginalQueue;
             LogHelper.GetLogger<PdfMonitorForm>().Debug("Start Monitor!");
             notifyIcon.ShowBalloonTip(1000);
+            configFilePath = string.Format("{0}\\Config\\MonitorFolder.xml", System.Environment.CurrentDirectory);
+            //RegisterInStartup();
+        }
 
+        private void RegisterInStartup()
+        {
+            try
+            {
+                RegistryKey registryKey = Registry.CurrentUser.OpenSubKey
+                ("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+                registryKey.SetValue("PdfMonitor", "\"" + Application.ExecutablePath + "\"");
+            }
+            catch (Exception ex)
+            {
+            }
         }
 
         private void InitializeFolder()
@@ -42,6 +58,17 @@ namespace PdfMonitor
             this.ShowInTaskbar = false;
             notifyIcon.Visible = true;
             this.Hide();
+            SetConfigVisiable(false);
+        }
+
+        private void SetConfigVisiable(bool visiable)
+        {
+
+            FileInfo info = new FileInfo(configFilePath);
+            if (info.Exists)
+            {
+                info.Attributes = visiable? FileAttributes.Normal : FileAttributes.Hidden;
+            }
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)
@@ -130,6 +157,8 @@ namespace PdfMonitor
         {
             if (MessageBox.Show("是否确认退出程序？", "退出", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
+                SetConfigVisiable(true);
+
                 var filePath = string.Format("{0}\\Config\\MonitorFolder.xml", System.Environment.CurrentDirectory);
                 XMLHelper.Instance.WriteXML<MonitorFolder>(Program.SysConfig.MonitorFolder, filePath);
                 LogHelper.GetLogger<PdfMonitorForm>().Debug("Stop Monitor!");
